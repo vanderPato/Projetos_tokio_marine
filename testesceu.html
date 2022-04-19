@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(0, #120c56, #000000);
+}
+
+
+
+.stars{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  animation: anim-stars 30s linear infinite;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+    position: relative;
+	width: 3px;
+	height: 3px;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+.stars::after{
+  content: " ";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+    content: " ";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+}
+.stars2{
+  
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+  animation: anim-stars 40s linear infinite;
+}
+
+.stars2::after{
+  margin: 50px;
+  padding: 20px;
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+}
+
+
+
+
+</style>
+<body>
+    <div class="container" >
+        <div class="stars" ></div>
+	<div class="stars2" ></div>
+	
+    </div>
+    
+    
+</body>
+</html>

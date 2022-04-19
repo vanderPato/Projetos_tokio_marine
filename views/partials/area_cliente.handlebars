@@ -1,0 +1,17 @@
+
+
+
+{{#if cliente}}
+{{#each cliente}}
+
+<button id="especial">Bem vindo:<span id="labe">  {{nome}}</span> </button>
+<a href="/"><button id="especial" width="20" height="25">sair</button></a>
+ 
+{{/each}}
+{{else}}
+<a href="/logar"><button  id="especial"> entrar</button> </a>
+
+
+ 
+{{/if}}
+

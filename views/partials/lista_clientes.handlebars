@@ -1,0 +1,79 @@
+
+
+<style>
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  border: 2px solid black;
+  border-radius: 10px;
+  background: rgb(103, 172, 98);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+ background-color: #fffb00;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
+
+.tamanho::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.tamanho::-webkit-scrollbar-track {
+  
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgb(103, 172, 98);        /* color of the tracking area */
+}
+
+.tamanho::-webkit-scrollbar-thumb {
+  background-color: #fffb00;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
+  .tamanho{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(180, 248, 135, 0.123);
+    overflow-y:auto ;
+    color: #506d15;
+   
+
+    
+  }
+ 
+ .desenhar{
+   width: 500px;
+   max-width: 500px;
+
+   margin: 5px;
+   padding: 5px;
+   border-radius: 10px;
+   background: white;
+ }
+
+
+ .pcomentario{
+   
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+   font-size: 12px;
+ }
+ 
+ .pnomes{
+   font-family: monospace;
+ }
+
+
+</style>
+
+
+<div class="desenhar">
+    <p class ="pnomes"> {{>lista_comentario}}</p> 
+</div>
+<hr>

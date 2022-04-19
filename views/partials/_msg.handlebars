@@ -1,0 +1,39 @@
+
+
+
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+
+    }
+    .certo{
+        font-size: 20px;
+        border: 1px solid royalblue;
+        font-family: monospace  ;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: center;
+        height: 50px;
+        width: 500px;
+        background: rgb(213, 241, 155);
+        color:rgb(0, 0, 0);
+    }
+</style>
+{{#if certo_msg }}
+
+<div class="container">
+<div class="certo">{{certo_msg}}</div>
+
+
+</div>
+{{/if}}
+
+
+{{#if erro_msg}}
+<div class="container">
+<div class="certo">{{erro_msg}}</div>
+</div>
+
+{{/if}}
